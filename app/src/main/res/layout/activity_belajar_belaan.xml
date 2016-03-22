@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bElakan"
+        android:text="Elakan"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bHindaran"
+        android:text="Hindaran"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bTangkisanKaki"
+        android:text="Tangkisan Kaki"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bTangkisanLengan"
+        android:text="Tangkisan Lengan"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+</LinearLayout>

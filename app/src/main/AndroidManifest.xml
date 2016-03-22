@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="panawa.silat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".PencakSilatActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BelajarSikapActivity"></activity>
+        <activity
+            android:name=".PembentukanGerakanActivity"
+            android:label="Pembentukan Gerakan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SikapDudukActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BelajarBelaanActivity"></activity>
+        <activity
+            android:name=".ElakanActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HindaranActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BelajarTangkisanKaki"
+            android:label="Tangkisan Kaki"></activity>
+        <activity
+            android:name=".KakiTutupDepanActivity"
+            android:label="Tangkisan Kaki"></activity>
+        <activity
+            android:name=".KakiTutupSampingActivity"
+            android:label="Tangkisan Kaki"></activity>
+        <activity
+            android:name=".KakiBuangLuarActivity"
+            android:label="Tangkisan Kaki"></activity>
+        <activity
+            android:name=".KakiBusurDalamActivity"
+            android:label="Tangkisan Kaki"></activity>
+        <activity
+            android:name=".BelajarTangkisanLengan"
+            android:label="Tangkisan Lengan"></activity>
+        <activity
+            android:name=".TangkisanLenganActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TangkisBawahActivity"></activity>
+        <activity android:name=".TangkisDuaLenganSamping"></activity>
+        <activity android:name=".TangkisLuarActivity"></activity>
+        <activity android:name=".TangkisAtasActivity"></activity>
+        <activity android:name=".TangkisanDalamActivity"></activity>
+        <activity android:name=".TangkisanDuaLenganRendahActivity"></activity>
+        <activity
+            android:name=".TangkisanSikuActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TangkisanTanganBelah"></activity>
+        <activity android:name=".TepisanActivity"></activity>
+        <activity
+            android:name=".SikapHormatDanTegak"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SikapPasangActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".KudaActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SeranganLenganActivity"
+            android:label="Seragan Lengan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SeranganTungkaiActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".VideoActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

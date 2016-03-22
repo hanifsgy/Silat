@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/bTangkisanBawah"
+                android:text="Tangkisan Bawah"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+
+            <Button
+                android:id="@+id/bTangkisanDuaLenganSamping"
+                android:text="Tangkisan Dua Lengan Samping"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+
+            <Button
+                android:id="@+id/bTangkisanLuar"
+                android:text="TangkisanLuar"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+
+            <Button
+                android:id="@+id/bTangkisanAtas"
+                android:text="Tangkisan Atas"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanDalam"
+                android:text="Tangkisan Dalam"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanDuaLenganDada"
+                android:text="Tangkisan Dua Lengan Dada"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanSiku"
+                android:text="Tangkisan Siku"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanDuaLenganRendah"
+                android:text="Tangkisan Dua Lengan Rendah"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanTanganBelah"
+                android:text="Tangkisan Tangan Belah"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+            <Button
+                android:id="@+id/bTangkisanTepisan"
+                android:text="Tepisan"
+                android:textColor="@color/MoreWhite"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Darkest"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bPembentukanGerakan"
+        android:text="Pembentukan Gerakan"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bSikapDuduk"
+        android:text="Sikap Duduk"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bSikapHormatDanTegak"
+        android:text="Sikap Hormat dan Tegak"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+    <Button
+        android:id="@+id/bSikapPasang"
+        android:text="Sikap Pasang"
+        android:textColor="@color/MoreWhite"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Darkest"/>
+
+</LinearLayout>
