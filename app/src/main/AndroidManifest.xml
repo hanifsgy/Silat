@@ -18,12 +18,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name=".SejarahActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".RefrensiActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".PencakSilatActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".BelajarSikapActivity"></activity>
+        <activity
+            android:name=".BelajarSikapActivity"
+            android:label="Belajar Sikap Pencak Silat"></activity>
         <activity
             android:name=".PembentukanGerakanActivity"
             android:label="Pembentukan Gerakan"
@@ -89,6 +94,15 @@
         <activity
             android:name=".VideoActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".PertandinganActivity"
+            android:label="Pertandingan"></activity>
+        <activity
+            android:name=".DosenActivity"
+            android:label="Dosen"></activity>
+        <activity
+            android:name=".ProfilActivity"
+            android:label="Profil Mahasiswa"></activity>
     </application>
 
 </manifest>

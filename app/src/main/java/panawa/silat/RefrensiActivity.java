@@ -13,7 +13,7 @@ import android.view.MenuItem;
 /**
  * Created by hanifsugiyanto on 3/1/16.
  */
-public class AboutActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class RefrensiActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     @Override
@@ -48,16 +48,16 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.sejarah) {
-            Intent a = new Intent(AboutActivity.this, MainActivity.class);
+        if (id == R.id.video) {
+            Intent a = new Intent(RefrensiActivity.this, VideoActivity.class);
             startActivity(a);
             // Handle the camera action
-        } else if (id == R.id.pencakSilat) {
-            Intent a = new Intent(AboutActivity.this, MainActivity.class);
+        } else if (id == R.id.latarBelakang) {
+            Intent a = new Intent(RefrensiActivity.this, SejarahActivity.class);
             startActivity(a);
 
-        } else if (id == R.id.about) {
-            Intent a = new Intent(AboutActivity.this, AboutActivity.class);
+        } else if (id == R.id.refrensi) {
+            Intent a = new Intent(RefrensiActivity.this, RefrensiActivity.class);
             startActivity(a);
 
         }

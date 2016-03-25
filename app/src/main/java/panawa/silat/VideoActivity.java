@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import panawa.silat.adapter.TabsAdapterBelajarSikapPembentukanGerakan;
 import panawa.silat.adapter.TabsAdapterVideo;
 import panawa.silat.extra.SlidingTabLayout;
 
@@ -58,22 +57,20 @@ public class VideoActivity extends AppCompatActivity implements NavigationView.O
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.sejarah) {
-            Intent a = new Intent(VideoActivity.this, MainActivity.class);
-            startActivity(a);
-            // Handle the camera action
-        } else if (id == R.id.pencakSilat) {
-            Intent a = new Intent(VideoActivity.this, PencakSilatActivity.class);
-            startActivity(a);
-
-        } else if (id == R.id.about) {
-            Intent a = new Intent(VideoActivity.this, AboutActivity.class);
-            startActivity(a);
-
-        } else if (id == R.id.video) {
+        if (id == R.id.video) {
             Intent a = new Intent(VideoActivity.this, VideoActivity.class);
             startActivity(a);
+            // Handle the camera action
+        } else if (id == R.id.latarBelakang) {
+            Intent a = new Intent(VideoActivity.this, SejarahActivity.class);
+            startActivity(a);
+
+        } else if (id == R.id.refrensi) {
+            Intent a = new Intent(VideoActivity.this, RefrensiActivity.class);
+            startActivity(a);
+
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

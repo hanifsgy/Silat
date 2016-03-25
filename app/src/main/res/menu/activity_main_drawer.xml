@@ -3,20 +3,22 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/sejarah"
-            android:icon="@drawable/ic_action_map"
-            android:title="Sejarah" />
-        <item
-            android:id="@+id/pencakSilat"
+            android:id="@+id/main"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Pencak Silat" />
-        <item
-            android:id="@+id/about"
-            android:icon="@drawable/ic_action_copy"
-            android:title="Latar Belakang" />
+            android:title="Menu Utama" />
         <item
             android:id="@+id/video"
             android:icon="@drawable/ic_action_camera"
             android:title="Video"/>
+
+        <item
+            android:id="@+id/latarBelakang"
+            android:icon="@drawable/ic_action_copy"
+            android:title="LatarBelakang" />
+        <item
+            android:id="@+id/refrensi"
+            android:icon="@drawable/ic_action_copy"
+            android:title="Daftar Pustaka" />
+
     </group>
 </menu>

@@ -4,14 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import panawa.silat.fragment.FragmentBelaan;
-import panawa.silat.fragment.FragmentDosen;
-import panawa.silat.fragment.FragmentKudaKuda;
-import panawa.silat.fragment.FragmentPertandingan;
-import panawa.silat.fragment.FragmentProfil;
-import panawa.silat.fragment.FragmentSeranganLengan;
-import panawa.silat.fragment.FragmentSerangkaianTungkai;
-import panawa.silat.fragment.FragmentSikap;
 import panawa.silat.fragment.kudaKuda.KudaBelakang;
 import panawa.silat.fragment.kudaKuda.KudaDepan;
 import panawa.silat.fragment.kudaKuda.KudaKhusus;

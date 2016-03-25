@@ -3,14 +3,12 @@ package panawa.silat.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.view.View;
 
 import panawa.silat.fragment.FragmentBelaan;
-import panawa.silat.fragment.FragmentDosen;
+import panawa.silat.DosenActivity;
 import panawa.silat.fragment.FragmentKudaKuda;
-import panawa.silat.fragment.FragmentPertandingan;
-import panawa.silat.fragment.FragmentProfil;
+import panawa.silat.PertandinganActivity;
+import panawa.silat.ProfilActivity;
 import panawa.silat.fragment.FragmentSeranganLengan;
 import panawa.silat.fragment.FragmentSerangkaianTungkai;
 import panawa.silat.fragment.FragmentSikap;
@@ -51,15 +49,15 @@ public class TabsAdapterPencakSilat extends FragmentStatePagerAdapter {
             case 4:
                 FragmentSerangkaianTungkai tab5 = new FragmentSerangkaianTungkai();
                 return tab5;
-            case 5:
-                FragmentPertandingan tab6 = new FragmentPertandingan();
-                return tab6;
-            case 6:
-                FragmentProfil tab7 = new FragmentProfil();
-                return tab7;
-            case 7:
-                FragmentDosen tab8 = new FragmentDosen();
-                return tab8;
+//            case 5:
+//                PertandinganActivity tab6 = new PertandinganActivity();
+//                return tab6;
+//            case 6:
+//                ProfilActivity tab7 = new ProfilActivity();
+//                return tab7;
+//            case 7:
+//                DosenActivity tab8 = new DosenActivity();
+//                return tab8;
             default:
                 return null;
         }

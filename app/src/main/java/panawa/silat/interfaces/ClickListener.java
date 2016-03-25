@@ -6,7 +6,7 @@
 //import android.view.MotionEvent;
 //import android.view.View;
 //
-//import panawa.silat.MainActivity;
+//import panawa.silat.SejarahActivity;
 //import panawa.silat.fragment.FragmentSikap;
 //
 ///**

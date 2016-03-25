@@ -4,48 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 
-import panawa.silat.adapter.TabsAdapterPencakSilat;
-import panawa.silat.extra.SlidingTabLayout;
-
-/**
- * Created by hanifsugiyanto on 3/1/16.
- */
-public class PencakSilatActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-    Toolbar toolbar;
-    ViewPager mViewPager;
-    TabsAdapterPencakSilat tabsAdapterPencakSilat;
-    SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Sikap", "Kuda-Kuda", "Serangan Lengan", "Belaan", "Serangan Tungkai", "Pertandingan", "Profil", "Dosen"};
-    int Numboftabs = 8;
+public class SejarahActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pencak_silat);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_latar_belakang);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarMain);
         setSupportActionBar(toolbar);
-
-        tabsAdapterPencakSilat = new TabsAdapterPencakSilat(getSupportFragmentManager(), Titles, Numboftabs);
-
-        mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(tabsAdapterPencakSilat);
-
-        tabs = (SlidingTabLayout) findViewById(R.id.tabs);
-        tabs.setDistributeEvenly(true);
-        tabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
-            @Override
-            public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.MoreWhite);
-            }
-        });
-        tabs.setViewPager(mViewPager);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -59,13 +33,34 @@ public class PencakSilatActivity extends AppCompatActivity implements Navigation
 
     @Override
     public void onBackPressed() {
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -75,19 +70,19 @@ public class PencakSilatActivity extends AppCompatActivity implements Navigation
         int id = item.getItemId();
 
         if (id == R.id.video) {
-            Intent a = new Intent(PencakSilatActivity.this, VideoActivity.class);
+            Intent a = new Intent(SejarahActivity.this, VideoActivity.class);
             startActivity(a);
             // Handle the camera action
         } else if (id == R.id.latarBelakang) {
-            Intent a = new Intent(PencakSilatActivity.this, PencakSilatActivity.class);
+            Intent a = new Intent(SejarahActivity.this, PencakSilatActivity.class);
             startActivity(a);
 
         } else if (id == R.id.refrensi) {
-            Intent a = new Intent(PencakSilatActivity.this, RefrensiActivity.class);
+            Intent a = new Intent(SejarahActivity.this, RefrensiActivity.class);
             startActivity(a);
 
-        }  else if (id == R.id.main){
-            Intent a = new Intent(PencakSilatActivity.this,MainActivity.class);
+        } else if (id == R.id.main){
+            Intent a = new Intent(SejarahActivity.this,MainActivity.class);
             startActivity(a);
         }
 
