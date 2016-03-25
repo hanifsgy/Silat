@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".SejarahActivity"
+    tools:context=".LatarBelakangActivity"
     tools:showIn="@layout/app_bar_latar_belakang"
     android:scrollbarAlwaysDrawVerticalTrack="true"
     android:background="@drawable/pencak_silat_background">
@@ -20,17 +20,18 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:padding="0dp"
             android:background="#99000000">
 
             <TextView
                 android:id="@+id/judul"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:textStyle="bold"
                 android:textColor="@color/MoreWhite"
-                android:text="SEJARAH PENCAK SILAT"/>
+                android:text="Latar Belakang"/>
             <TextView
                 android:id="@+id/isi_satu"
                 android:layout_below="@+id/judul"
@@ -39,16 +40,52 @@
                 android:padding="5dp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/MoreWhite"
-                android:text="@string/sejara_fix_1"/>
+                android:text="@string/latar_belakang_1"/>
             <TextView
                 android:id="@+id/isi_dua"
-                android:layout_below="@+id/judul"
+                android:layout_below="@+id/isi_satu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/MoreWhite"
-                android:text="@string/sejarah_fix_2"/>
+                android:text="@string/latar_belakang_2"/>
+            <TextView
+                android:id="@+id/isi_tiga"
+                android:layout_below="@+id/isi_dua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/MoreWhite"
+                android:text="@string/latar_belakang_3"/>
+            <TextView
+                android:id="@+id/isi_empat"
+                android:layout_below="@+id/isi_tiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/MoreWhite"
+                android:text="@string/latar_belakang_4"/>
+            <TextView
+                android:id="@+id/isi_lima"
+                android:layout_below="@+id/isi_empat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/MoreWhite"
+                android:text="@string/latar_belakang_5"/>
+            <TextView
+                android:id="@+id/isi_enam"
+                android:layout_below="@+id/isi_lima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/MoreWhite"
+                android:text="@string/latar_belakang_6"/>
         </RelativeLayout>
 
 

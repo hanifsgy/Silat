@@ -76,6 +76,9 @@
         <activity
             android:name=".ProfilActivity"
             android:label="Profil Mahasiswa"></activity>
+        <activity android:name=".LatarBelakangActivity"
+            android:label="Latar Belakang"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
