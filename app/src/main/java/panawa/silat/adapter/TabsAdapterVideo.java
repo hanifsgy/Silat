@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import panawa.silat.fragment.FragmentPasang;
 import panawa.silat.fragment.FragmentSendiri;
-import panawa.silat.fragment.belaan.elakan.siku.Atas;
-import panawa.silat.fragment.belaan.elakan.siku.Bawah;
-import panawa.silat.fragment.belaan.elakan.siku.Dalam;
 
 /**
  * Created by hanifsugiyanto on 3/15/16.

@@ -36,7 +36,7 @@ public class BelajarBelaanActivity extends AppCompatActivity {
         tangkisanKaki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BelajarBelaanActivity.this, BelajarTangkisanKaki.class);
+                Intent intent = new Intent(BelajarBelaanActivity.this, TangkisanKakiActivity.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +44,7 @@ public class BelajarBelaanActivity extends AppCompatActivity {
         tangkisanLengan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BelajarBelaanActivity.this, BelajarTangkisanLengan.class);
+                Intent intent = new Intent(BelajarBelaanActivity.this, TangkisanLenganActivity.class);
                 startActivity(intent);
             }
         });

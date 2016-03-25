@@ -74,7 +74,7 @@ public class SejarahActivity extends AppCompatActivity
             startActivity(a);
             // Handle the camera action
         } else if (id == R.id.latarBelakang) {
-            Intent a = new Intent(SejarahActivity.this, PencakSilatActivity.class);
+            Intent a = new Intent(SejarahActivity.this, LatarBelakangActivity.class);
             startActivity(a);
 
         } else if (id == R.id.refrensi) {

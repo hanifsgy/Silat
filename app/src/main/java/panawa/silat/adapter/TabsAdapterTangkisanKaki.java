@@ -4,21 +4,25 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import panawa.silat.fragment.belaan.elakan.hindaran.HindaranSatu;
-import panawa.silat.fragment.belaan.elakan.hindaran.HindaranSisi;
-import panawa.silat.fragment.belaan.elakan.tangkisanLengan.Dada;
-import panawa.silat.fragment.belaan.elakan.tangkisanLengan.Kepal;
+import panawa.silat.fragment.sikap.pembentukanGerakan.duduk.DudukDua;
+import panawa.silat.fragment.sikap.pembentukanGerakan.duduk.DudukEmpat;
+import panawa.silat.fragment.sikap.pembentukanGerakan.duduk.DudukSatu;
+import panawa.silat.fragment.sikap.pembentukanGerakan.duduk.DudukTiga;
+import panawa.silat.fragment.tangkisanKaki.KakiBuangLuarActivity;
+import panawa.silat.fragment.tangkisanKaki.KakiBusurDalamActivity;
+import panawa.silat.fragment.tangkisanKaki.KakiTutupDepanActivity;
+import panawa.silat.fragment.tangkisanKaki.KakiTutupSampingActivity;
 
 /**
- * Created by hanifsugiyanto on 3/7/16.
+ * Created by hanifsugiyanto on 3/25/16.
  */
-public class TabsAdapterTangkisanLenganDada extends FragmentStatePagerAdapter {
+public class TabsAdapterTangkisanKaki  extends FragmentStatePagerAdapter {
     CharSequence Titles[]; // This will Store the Titles of the Tabs which are Going to be passed when ViewPagerAdapter is created
     int NumbOfTabs; // Store the number of tabs, this will also be passed when the ViewPagerAdapter is created
 
 
     // Build a Constructor and assign the passed Values to appropriate values in the class
-    public TabsAdapterTangkisanLenganDada(FragmentManager fm, CharSequence mTitles[], int mNumbOfTabsumb) {
+    public TabsAdapterTangkisanKaki(FragmentManager fm, CharSequence mTitles[], int mNumbOfTabsumb) {
         super(fm);
 
         this.Titles = mTitles;
@@ -31,11 +35,17 @@ public class TabsAdapterTangkisanLenganDada extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Dada tab1 = new Dada();
+                KakiBuangLuarActivity tab1 = new KakiBuangLuarActivity();
                 return tab1;
             case 1:
-                Kepal tab2 = new Kepal();
+                KakiBusurDalamActivity tab2 = new KakiBusurDalamActivity();
                 return tab2;
+            case 2:
+                KakiTutupDepanActivity tab3 = new KakiTutupDepanActivity();
+                return tab3;
+            case 3:
+                KakiTutupSampingActivity tab4 = new KakiTutupSampingActivity();
+                return tab4;
             default:
                 return null;
         }
@@ -57,3 +67,4 @@ public class TabsAdapterTangkisanLenganDada extends FragmentStatePagerAdapter {
     }
 
 }
+

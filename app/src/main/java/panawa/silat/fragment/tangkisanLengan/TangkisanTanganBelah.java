@@ -1,8 +1,9 @@
-package panawa.silat.fragment.belaan.elakan.siku;
+package panawa.silat.fragment.tangkisanLengan;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +13,13 @@ import panawa.silat.R;
 /**
  * Created by hanifsugiyanto on 3/7/16.
  */
-public class Atas extends Fragment {
+public class TangkisanTanganBelah extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View sikuView = inflater.inflate(R.layout.fragment_siku_atas, container, false);
+        View sikapView = inflater.inflate(R.layout.activity_tangan_belah, container, false);
 
 
-        return sikuView;
+        return sikapView;
     }
 }
-

@@ -24,9 +24,6 @@
             android:name=".RefrensiActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".PencakSilatActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
             android:name=".BelajarSikapActivity"
             android:label="Belajar Sikap Pencak Silat"></activity>
         <activity
@@ -44,37 +41,13 @@
             android:name=".HindaranActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".BelajarTangkisanKaki"
-            android:label="Tangkisan Kaki"></activity>
-        <activity
-            android:name=".KakiTutupDepanActivity"
-            android:label="Tangkisan Kaki"></activity>
-        <activity
-            android:name=".KakiTutupSampingActivity"
-            android:label="Tangkisan Kaki"></activity>
-        <activity
-            android:name=".KakiBuangLuarActivity"
-            android:label="Tangkisan Kaki"></activity>
-        <activity
-            android:name=".KakiBusurDalamActivity"
-            android:label="Tangkisan Kaki"></activity>
-        <activity
-            android:name=".BelajarTangkisanLengan"
-            android:label="Tangkisan Lengan"></activity>
+            android:name=".TangkisanKakiActivity"
+            android:label="Tangkisan Kaki"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".TangkisanLenganActivity"
+            android:label="Tangkisan Lengan"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".TangkisBawahActivity"></activity>
-        <activity android:name=".TangkisDuaLenganSamping"></activity>
-        <activity android:name=".TangkisLuarActivity"></activity>
-        <activity android:name=".TangkisAtasActivity"></activity>
-        <activity android:name=".TangkisanDalamActivity"></activity>
-        <activity android:name=".TangkisanDuaLenganRendahActivity"></activity>
-        <activity
-            android:name=".TangkisanSikuActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".TangkisanTanganBelah"></activity>
-        <activity android:name=".TepisanActivity"></activity>
         <activity
             android:name=".SikapHormatDanTegak"
             android:theme="@style/AppTheme.NoActionBar"></activity>

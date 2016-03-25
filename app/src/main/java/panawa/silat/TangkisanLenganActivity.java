@@ -5,32 +5,33 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import panawa.silat.adapter.TabsAdapterSikapDuduk;
-import panawa.silat.adapter.TabsAdapterTangkisanLenganDada;
+import panawa.silat.adapter.TabsAdapterBelajarSikapPembentukanGerakan;
+import panawa.silat.adapter.TabsAdapterTangkisanLengan;
 import panawa.silat.extra.SlidingTabLayout;
 
 /**
- * Created by hanifsugiyanto on 3/7/16.
+ * Created by hanifsugiyanto on 3/25/16.
  */
 public class TangkisanLenganActivity extends AppCompatActivity {
     Toolbar toolbar;
     ViewPager mViewPager;
-    TabsAdapterTangkisanLenganDada tabsAdapterTangkisanLenganDada;
+    TabsAdapterTangkisanLengan tabsAdapterTangkisanLengan;
     SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Dua Lengan Dada", "Dua Lengan Kepal"};
-    int Numboftabs = 2;
+    CharSequence Titles[] = {"Siku Atas", "Siku Bawah", "Siku Dalam", "Tangkisan Dalam", "Tangkisan Dua Lengan Rendah", "Tangkisan Lengan Kepal",
+            "Tangkisan Tangan Belah", "Tangkisan Atas", "Tangkisan Bawah", "Tangkisan Dua Lengan Samping", "Tangkisan Luar", "Tepisan"};
+    int Numboftabs = 12;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tangkisan_lengan_dada);
+        setContentView(R.layout.activity_tangkisan_lengan);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        tabsAdapterTangkisanLenganDada = new TabsAdapterTangkisanLenganDada(getSupportFragmentManager(), Titles, Numboftabs);
+        tabsAdapterTangkisanLengan = new TabsAdapterTangkisanLengan(getSupportFragmentManager(), Titles, Numboftabs);
 
         mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(tabsAdapterTangkisanLenganDada);
+        mViewPager.setAdapter(tabsAdapterTangkisanLengan);
 
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true);
@@ -43,4 +44,3 @@ public class TangkisanLenganActivity extends AppCompatActivity {
         tabs.setViewPager(mViewPager);
     }
 }
-

@@ -17,7 +17,7 @@ public class ElakanActivity extends AppCompatActivity {
     ViewPager mViewPager;
     TabsAdapterElakan tabsAdapterElakan;
     SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Elakan Bawah", "Elakan Belakang Lurus", "Elakan Samping"};
+    CharSequence Titles[] = {"Elakan SikuBawah", "Elakan Belakang Lurus", "Elakan Samping"};
     int Numboftabs = 3;
 
     @Override

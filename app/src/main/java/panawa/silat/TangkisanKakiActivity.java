@@ -1,24 +1,27 @@
 package panawa.silat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
 
 import panawa.silat.adapter.TabsAdapterSikapDuduk;
-import panawa.silat.adapter.TabsAdapterSiku;
+import panawa.silat.adapter.TabsAdapterTangkisanKaki;
 import panawa.silat.extra.SlidingTabLayout;
 
 /**
  * Created by hanifsugiyanto on 3/7/16.
  */
-public class TangkisanSikuActivity extends AppCompatActivity {
-    Toolbar toolbar;
+public class TangkisanKakiActivity extends AppCompatActivity {
+Toolbar toolbar;
     ViewPager mViewPager;
-    TabsAdapterSiku tabsAdapterSiku;
+    TabsAdapterTangkisanKaki tabsAdapterTangkisanKaki;
     SlidingTabLayout tabs;
-    CharSequence Titles[] = {"Atas", "Dalam", "Bawah", "Sempok"};
-    int Numboftabs = 3;
+    CharSequence Titles[] = {"Kaki Buang Luar", "Kaki Busur SikuDalam", "Kaki Tutup Depan", "Kaki Tutup Samping"};
+    int Numboftabs = 4;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,10 +30,10 @@ public class TangkisanSikuActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        tabsAdapterSiku = new TabsAdapterSiku(getSupportFragmentManager(), Titles, Numboftabs);
+        tabsAdapterTangkisanKaki = new TabsAdapterTangkisanKaki(getSupportFragmentManager(), Titles, Numboftabs);
 
         mViewPager = (ViewPager) findViewById(R.id.pager);
-        mViewPager.setAdapter(tabsAdapterSiku);
+        mViewPager.setAdapter(tabsAdapterTangkisanKaki);
 
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true);

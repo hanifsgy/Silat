@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import panawa.silat.adapter.TabsAdapterBelajarSikapPembentukanGerakan;
-import panawa.silat.adapter.TabsAdapterPencakSilat;
 import panawa.silat.extra.SlidingTabLayout;
 
 /**
